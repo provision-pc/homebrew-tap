@@ -10,7 +10,7 @@ class Task < Formula
 
   on_macos do
     url "https://github.com/megabyte-labs/go/cli/bodega/releases/download/v11.0.0/bodega_11.0.0_darwin_all.tar.gz"
-    sha256 "37066c69071b75b154f7e86426643cb849e3916665260f972273fb4303381028"
+    sha256 "e02c36295157e0450c110c14bd4f4503e3ba9eba9c76ae07a31a9e9a82a76419"
 
     def install
       bin.install "task"
@@ -23,7 +23,7 @@ class Task < Formula
   on_linux do
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
       url "https://github.com/megabyte-labs/go/cli/bodega/releases/download/v11.0.0/bodega_11.0.0_linux_armv6.tar.gz"
-      sha256 "a570f5b28788054449e70fc53e6992224bafb08325b4757c1c58b47c732c1b3d"
+      sha256 "e099ccea13704a866490dc23a99322799cb4e004f41cba448c5d9688a303f85f"
 
       def install
         bin.install "task"
@@ -34,7 +34,7 @@ class Task < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/megabyte-labs/go/cli/bodega/releases/download/v11.0.0/bodega_11.0.0_linux_arm64.tar.gz"
-      sha256 "3f2a540430e87c4debd8e6c0a87a1f6cb6ce5c4c71475f79d1fbb9d1f266da30"
+      sha256 "be778e42f9c8bbb36ef3df5735fc791a2ad43fdd0d53d3a78a6e0869414ca8b4"
 
       def install
         bin.install "task"
@@ -45,7 +45,7 @@ class Task < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/megabyte-labs/go/cli/bodega/releases/download/v11.0.0/bodega_11.0.0_linux_amd64.tar.gz"
-      sha256 "71745096732fe86a405ea2278030bfa43fd04168674740e66d834f9b892cc6e5"
+      sha256 "5bdaec06ab58d8ace78c76809e06b524fb66aaf98c905176a81d7dbaac9e9850"
 
       def install
         bin.install "task"
