@@ -53,7 +53,7 @@ After you run `npm i`, you can view the available pre-defined build tool command
 ```
 ❯ npm run info
 
-> @mblabs/homebrew-tap@1.0.4 info
+> @installdoc/homebrew-tap@1.0.4 info
 > npm-scripts-info
 
 build:
