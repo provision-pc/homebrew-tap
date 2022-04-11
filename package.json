@@ -26,7 +26,6 @@
     "commit": "bash start.sh && task commit",
     "fix": "bash start.sh && task fix",
     "help": "bash start.sh && task --menu",
-    "postinstall": "go-npm install || true",
     "lint": "bash start.sh && task lint",
     "preload": "bash start.sh && task preload",
     "prepare": "bash start.sh && (test -f Taskfile.yml && task npm:prepare) || true",
@@ -34,7 +33,6 @@
     "repair": "bash <(curl -sS https://install.doctor/repair)",
     "start": "test -z $SKIP_NPM_START && bash start.sh || true",
     "test": "bash start.sh && task npm:test:none",
-    "preuninstall": "go-npm uninstall || true",
     "unpack": "bash start.sh && task npm:bundle:unpack",
     "update": "bash start.sh && task update",
     "vscode": "bash start.sh && task vscode"
@@ -51,9 +49,6 @@
   "optionalDependencies": {},
   "devDependencies": {
     "@commitlint/config-conventional": "latest",
-    "@types/node": "^16.11.6",
-    "esbuild": "^0.12.29",
-    "esbuild-node-externals": "^1.3.0",
     "eslint-config-strict-mode": "latest",
     "git-cz-emoji": "latest",
     "handlebars-helpers": "latest",
@@ -92,6 +87,9 @@
     "github_id": "R_kgDOGuHyMw",
     "group": "npm",
     "name": "Install Doctor Tap",
+    "profile": {
+      "npmjs_organization": "installdoc"
+    },
     "overview": "**[Install Doctor](https://install.doctor)** is a web service that makes it easy to install your favorite software. It is a service maintained by [Megabyte Labs](https://megabyte.space) and is used as a front-end for anything that involves installing and provisioning systems. This repository is just one small part of Install Doctor. It is the Homebrew tap for users who wish to use Homebrew to install the software we support.",
     "repository": {
       "github": "https://github.com/installdoc/homebrew-tap",
