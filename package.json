@@ -80,7 +80,7 @@
     "node": ">=14.18.0"
   },
   "publishConfig": {
-    "@gitlab:registry": "https://gitlab.com/api/v4/projects//packages/npm/",
+    "@gitlab:registry": "https://gitlab.com/api/v4/projects/35218390/packages/npm/",
     "access": "public",
     "registry": "https://registry.npmjs.org/",
     "tag": "edge"
@@ -88,6 +88,8 @@
   "blueprint": {
     "description": "The official Homebrew tap for Install Doctor (https://install.doctor)",
     "github_id": "R_kgDOGuHyMw",
+    "gitlab_group_id": "6973111",
+    "gitlab_project_id": "35218390",
     "group": "npm",
     "name": "Install Doctor Tap",
     "overview": "**[Install Doctor](https://install.doctor)** is a web service that makes it easy to install your favorite software. It is a service maintained by [Megabyte Labs](https://megabyte.space) and is used as a front-end for anything that involves installing and provisioning systems. This repository is just one small part of Install Doctor. It is the Homebrew tap for users who wish to use Homebrew to install the software we support.",
@@ -100,9 +102,7 @@
     },
     "slug": "homebrew-tap",
     "subgroup": "tap",
-    "title": "The Official Homebrew Tap for Install Doctor",
-    "gitlab_project_id": "35218390",
-    "gitlab_group_id": "6973111"
+    "title": "The Official Homebrew Tap for Install Doctor"
   },
   "changelog": {
     "displayTypes": [
