@@ -100,7 +100,9 @@
     },
     "slug": "homebrew-tap",
     "subgroup": "tap",
-    "title": "The Official Homebrew Tap for Install Doctor"
+    "title": "The Official Homebrew Tap for Install Doctor",
+    "gitlab_project_id": "35218390",
+    "gitlab_group_id": "6973111"
   },
   "changelog": {
     "displayTypes": [
